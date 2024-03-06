@@ -1,0 +1,114 @@
+
+body {
+  background-color: #f8f9fa;
+}
+
+.back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.card img {
+  border-radius: 15px 0 0 15px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6c757d;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #ffa500;
+  padding: 1rem 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  background-color: #000000;
+}
+
+.navbar-nav .nav-link {
+  color: #000000;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffae61;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+  visibility: visible;
+  background-color: #ee7809;
+  transform: scaleX(1);
+  background-color: #ee7809;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ee7809;
+}
+
+.brand-name{
+  color: #fc902b;
+}

@@ -1,0 +1,229 @@
+.header {
+  text-align: center;
+}
+
+
+.product-container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: start;  */
+  font-family: "Figtree", sans-serif;
+}
+
+#hero {
+  background-image: url("../images/payTrakz_image.jpg");
+  background-Size: cover;
+  background-Position: center;
+  background-Repeat: no-repeat;
+  height: 50vh;
+  overflow: hidden;
+  color: rgb(2, 2, 2);
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* border: 1px solid rgb(250, 122, 1); */
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 21, 37, 0.8);
+  z-index: -1;
+}
+
+
+
+img{
+  width: 40px ;
+  height: 30px;
+  color: black;
+}
+
+/* Title Styles */
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 10px;
+}
+.content2  {
+ 
+  padding-top: 50px; 
+  background-color: rgba(455, 455, 455, 0.6);
+  border-radius: 0 0 10px 10px;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  font-size: 20px;
+  color:black;
+  text-align: center;
+  font-weight: 500;
+  
+
+}
+
+h1 span {
+  color: #ffbf1a;
+}
+h4 {
+  font-size: 16px;
+  color: rgb(20, 19, 19);
+}
+
+
+.product-section {
+  width: 80%;
+  max-width: 1170px;
+  margin: 50px auto;
+  display: grid;
+  margin-bottom: 40px;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px 30px;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: 1px solid rgb(250, 122, 1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+.product-text {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  padding-left: 20px;
+  text-align: start;
+   
+}
+
+ 
+
+.product-text p  {
+  font-size: 16px;
+  align-items: center;
+  line-height: 26px; 
+  padding-bottom: 15px;
+
+}
+.product-image {
+  overflow: hidden;
+
+}
+
+.product-image img {
+  width: 300px;
+  height: auto;
+  margin-left: 200px;
+  border-radius: 10px;
+  
+}
+
+
+
+.product-text h1 {
+  color: black;
+}
+@media  only screen and (max-width: 300px) {
+
+.product-container {
+  width: 90vw;
+  height: 100vh;
+}
+h1 {
+  font-size: 5px;}
+.content {
+  position: relative ;
+  font-size: 10px;
+ 
+}
+
+.product-section {
+  width: 200px;
+  height: 300px; 
+  grid-template-columns: 1fr;
+  margin-left: 0;
+ 
+}
+.product-image img {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+
+}
+.product-text p {
+font-size: 6px;
+line-height: normal;}
+}
+
+
+
+@media  only screen and (min-width: 300px) and (max-width:600px){
+  #hero  {
+    width: 90vw;
+  }
+  h1 {
+    font-size: 8px;}
+  .content {
+    position: absolute;
+    font-size: 8px;
+    padding-top: 100px;
+  }  
+  .product-section {
+    width: 90vw;
+    height: 100vh; 
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    grid-gap: 0;
+    /* background-color: rgb(74, 196, 67); */
+  }
+
+.product-image img {
+    position: relative;
+    width:200px;
+    height: 250px;
+    margin-left: 25px;
+  
+  
+  }
+
+
+.content2 {
+ font-size: 16px;
+ width: 100%;
+}
+  .product-text p {
+    font-size: 12px;
+  }
+}
+@media  only screen and (min-width: 600px) and (max-width:900px){
+#hero  {
+  width: 90vw;
+}
+.product-text {
+  padding-left: 0;
+}
+.product-section {
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr;
+}
+   
+  
+  .product-image img {
+    width: 200px;
+    height: 300px;
+  
+  }
+  .product-text  p{
+    font-size: 16px;}
+  }
+
+
+
+
+  

@@ -1,0 +1,248 @@
+import React from "react";
+import bkg from "../src/images/newbg.PNG";
+import transparencyImage from "../src/images/organize (1) (1).jpg";
+import organiseImage from "../src/images/organize (1) (1).jpg";
+import passionImage from "../src/images/passsssion (1) (1).jpeg";
+import bestdev from "../src/images/developer.avif";
+import onTD from "../src/images/onTD.png";
+import s24x7 from "../src/images/24x7.jpg";
+import tech from "../src/images/handimg.jpg";
+
+const Company = () => {
+  const boldTextStyle = { fontWeight: "bold" };
+
+  const carouselData = [
+    {
+      title: "TRANSPARENCY",
+      content:
+        "We are always open, honest, and collaborative in all our interactions with every team member, client, and industry peer.",
+      image: transparencyImage,
+    },
+    {
+      title: "ORGANISE",
+      content: "We avoid complication and use technology to record and report.",
+      image: transparencyImage,
+    },
+    {
+      title: "PASSION",
+      content: "We are driven by the love for our work, teams, and clients.",
+      image: transparencyImage,
+    },
+  ];
+
+  return (
+    <section
+      id="header"
+      className="section mt-0 mb-0"
+      style={{
+        backgroundColor: "#d9712b",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        padding: "20px",
+        borderRadius: "15px",
+      }}
+    >
+      <div className="container mt-1 ">
+        <div className="row">
+          <div className="col">
+            <div
+              id="carouselExampleDark"
+              className="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-indicators ">
+                {carouselData.map((_, index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to={index.toString()}
+                    className={index === 0 ? "active" : ""}
+                    aria-current={index === 0 ? "true" : undefined}
+                    aria-label={`Slide ${index + 1}`}
+                  ></button>
+                ))}
+              </div>
+              <div className="carousel-inner">
+                {carouselData.map((item, index) => (
+                  <div
+                    key={index}
+                    className={`carousel-item ${index === 0 ? "active" : ""}`}
+                    data-bs-interval={index === 0 ? "10000" : "2000"}
+                  >
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="40vw" height="300px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#e5e5e5"></rect><text x="50%" y="50%" fill="#999" dy=".3em"></text></svg>
+                 
+                    <div className="carousel-caption ">
+                      
+                      <h5 
+                        className="fw-bolder display-3 title-with-border"
+                        style={boldTextStyle}
+                      >
+                        {item.title}
+                      </h5>
+                     
+                      <p style={{ fontSize: "1.25rem", ...boldTextStyle }}>
+                        {item.content}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="row mt-5">
+          <div class="f">
+  
+                <div className="col mb-4">
+           <div class="c">
+           <div
+              className="card border-dark"
+              style={{ opacity: 0.8, height: "100%" }}
+            >
+              <img
+                src={bestdev}
+                className="card-img-top"
+                alt="bestdevelopers"
+              />
+  
+             <div className="card-body text-dark ">
+                
+                <h5  className="card-title" style={boldTextStyle}>
+                  Best Development Team
+                </h5>
+                <p  className="card-text" style={boldTextStyle}>
+                  Based on the client requirement, we develop the best software
+                  solution.
+                </p>
+                
+                
+              </div>
+             
+            </div>
+           </div>
+          </div>
+               
+          
+          
+          <div className="col mb-4">
+          <div class="e">
+          <div
+              className="card border-dark"
+              style={{ opacity: 0.8, height: "100%" }}
+            >
+              <img src={onTD} className="card-img-top" alt="Ontimedeployment" />
+              <div className="card-body text-dark">
+                <h5 className="card-title" style={boldTextStyle}>
+                  On Time Deployment
+                </h5>
+                <p className="card-text" style={boldTextStyle}>
+                  We always give our best to build the product and on-time
+                  deployment of the product.
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+
+          <div className="col mb-4">
+            <div class="g">
+            <div
+              className="card border-dark"
+              style={{ opacity: 0.8, height: "100%" }}
+            >
+              <img src={s24x7} className="card-img-top" alt="24x7" />
+              <div className="card-body text-dark">
+                <h5 className="card-title" style={boldTextStyle}>
+                  24/7 Support
+                </h5>
+                <p className="card-text" style={boldTextStyle}>
+                  We believe in customer satisfaction; our support team is 24/7
+                  available to solve customer's problems.
+                </p>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row mt-2">
+          <div className="col">
+            <div className="card bg-transparent border-lg-5">
+              <div className="card-body text-black d-flex flex-column align-items-center">
+                <h3
+                  className="card-title text-center text-light mb-3 "
+                  style={boldTextStyle}
+                >
+                  <strong>JOIN INFOBYTES TECH WORLD</strong>
+                </h3>
+                <h5>
+                  <p className="card-text mb-3" style={boldTextStyle}>
+                  IF YOU'RE PASSIONATE ABOUT TECHNOLOGY AND FINANCE, INFOBYTES
+                    TECHNOSYS IS THE PLACE TO BE. EXPLORE EXCITING CAREER
+                    OPPORTUNITIES AND BE PART OF OUR PIONEERING JOURNEY. JOIN US
+                    IN SHAPING THE FUTURE OF FINTECH!
+                  </p>
+                </h5>
+                <div className="d-flex gap-5">
+                  <a class="btnn"  style={{ ...boldTextStyle, textDecoration: 'none' }}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScHM22QHO8Id5CRZ3qTPcKB1fRV70I-zjE3niY77gojaBV8FA/viewform?usp=sf_link"       
+                  >
+                   APPLY HERE FOR FRESHERS 
+                  </a>
+                  <a class="btnn"  style={{ ...boldTextStyle, textDecoration: 'none' }}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeH7Wacpq1F3zhgYmVzKanVRlUZZUUQht-oqdg0uBNB7Tzg2w/viewform?usp=sf_link"
+                    className="text-decoration-none"
+                  >
+                    APPLY FOR EXPERIENCE
+                  </a>
+                  <a  class="btnn" style={{ ...boldTextStyle, textDecoration: 'none' }}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScN4IG-G0d0XJvZPAz4z4pIKEKvWUtw1kB56K1ESMK4yq-rxg/viewform?usp=sf_link"              
+                  >
+                   TRAINING CUM INTERNSHIP PROGRAM
+                  </a>
+                </div>
+                <img
+                  src={tech}
+                  className="card-img-top mt-4"
+                  alt="joinus"
+                  style={{ height: "350px", width: "700px" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Company;
