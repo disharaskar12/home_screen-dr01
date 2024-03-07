@@ -218,7 +218,7 @@ export default function Company() {
                   IN SHAPING THE FUTURE OF FINTECH!
                 </p>
               </h5>
-              <div class="custom-flex gap-5">
+              {/* <div class="custom-flex gap-5">
                 <a
                   class="btnn"
                   href="https://docs.google.com/forms/d/e/1FAIpQLScHM22QHO8Id5CRZ3qTPcKB1fRV70I-zjE3niY77gojaBV8FA/viewform?usp=sf_link"
@@ -237,7 +237,7 @@ export default function Company() {
                 >
                   TRAINING CUM INTERNSHIP PROGRAM
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

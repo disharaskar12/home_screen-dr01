@@ -309,7 +309,7 @@ const Company = () => {
                   </p>
                 </h5>
                 <div className="d-flex gap-5">
-                  <a
+                  {/* <a
                     class="btnn"
                     style={{ ...boldTextStyle, textDecoration: "none" }}
                     href="https://docs.google.com/forms/d/e/1FAIpQLScHM22QHO8Id5CRZ3qTPcKB1fRV70I-zjE3niY77gojaBV8FA/viewform?usp=sf_link"
@@ -329,7 +329,7 @@ const Company = () => {
                     href="https://docs.google.com/forms/d/e/1FAIpQLScN4IG-G0d0XJvZPAz4z4pIKEKvWUtw1kB56K1ESMK4yq-rxg/viewform?usp=sf_link"
                   >
                     TRAINING CUM INTERNSHIP PROGRAM
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

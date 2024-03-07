@@ -85,7 +85,7 @@ const Home = () => {
           IS THE PLACE TO BE. EXPLORE EXCITING CAREER OPPORTUNITIES AND BE PART
           OF OUR PIONEERING JOURNEY. JOIN US IN SHAPING THE FUTURE OF FINTECH!
         </p>
-        <a
+        {/* <a
           href="https://docs.google.com/forms/d/e/1FAIpQLScHM22QHO8Id5CRZ3qTPcKB1fRV70I-zjE3niY77gojaBV8FA/viewform?usp=sf_link"
           class="button"
         >
@@ -104,7 +104,7 @@ const Home = () => {
         >
           {" "}
           Training cum Internship Program
-        </a>
+        </a> */}
       </div>
     </section>
   );
